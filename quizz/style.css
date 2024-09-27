@@ -1,0 +1,36 @@
+button {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(211, 164, 255);
+    color: aliceblue;
+    padding: 20px;
+    margin: 10px;
+}
+
+#questionTag {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    font-size: 30px;
+    color: cornflowerblue;
+}
+
+#score {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    font-size: 30px;
+    color: cornflowerblue;
+}
+
+.quizzConatiner {
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 50px;
+    border: 1px solid rgb(211, 164, 255);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+}
