@@ -1,0 +1,40 @@
+body{
+    background-image: url(../img/mesh-gradient.png);
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    background-color: #0a7f89;
+    color: aliceblue;
+    padding: 20px;
+    margin: 10px;   
+}
+
+#questionTag {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    font-size: 30px;
+    color: #F23A4B;
+}
+
+#score {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    font-size: 30px;
+    color: #F23A4B;
+}
+
+.quizzConatiner {
+    margin: 0 auto;
+    width: 30%;
+    margin-top: 50px;
+    border: 1px solid #0a7f89;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,245 @@
+html,
+body,
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+}
+:root {
+    --white-color:                  #ffffff;
+    --primary-color:                #13547a;
+    --secondary-color:              #80d0c7;
+    --section-bg-color:             #f0f8ff;
+    --custom-btn-bg-color:          #80d0c7;
+    --custom-btn-bg-hover-color:    #13547a;
+    --dark-color:                   #000000;
+    --p-color:                      #717275;
+    --border-color:                 #7fffd4;
+    --link-hover-color:             #13547a;
+}
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+
+.quizzBtn{
+    width: 250px;
+    height: 65px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #13547a;
+    margin-left: 50px;
+    
+}
+.edu-resource {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#video-container {
+    width: 100%;
+    height: 100%;
+}
+#iframe1 {
+    width: 100%;
+    height: 600px;
+    border-radius: 20px;
+}
+
+.quizzBtn:hover{
+    background-color: #13547a;
+}
+.quizzBtn:hover a{
+    color:  #f0f8ff;
+}
+.overview {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.tabs {
+    display: flex;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    width: 100%;
+    padding: 0 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.pages {
+    width: 100%;
+}
+
+.course-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.page1-btns button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--border-color);
+    color: var(--white-color);
+    font-size: 18px;
+}
+
+.page1-btns button:hover {
+    background-color: var(--primary-color);
+}
+
+#notes {
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    border: 1px solid var(--custom-btn-bg-hover-color);
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+#notesBtn {
+    width: 250px;
+    height: 50px;
+    background-color: var(--custom-btn-bg-color);
+    color: #fff;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px;
+}
+#notesBtn:hover{
+    background-color: var(--custom-btn-bg-hover-color);
+}
+.ai-chat {
+    border: 1px solid var(--custom-btn-bg-hover-color);
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 18px;
+}
+
+.ask-ai {
+    margin: 10px;
+    display: flex;
+}
+
+.ask-ai button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: var(--custom-btn-bg-color);
+    color: var(--white-color);
+    margin-left: 10px;
+}
+.ask-ai button:hover{
+    background-color: var(--custom-btn-bg-hover-color);
+}
+.ask-ai input {
+    width: 100%;
+    border: none;
+    background-color: #fff;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 1px solid var(--custom-btn-bg-hover-color);
+}
+
+.faq {
+    flex-direction: column;
+}
+
+.collapsed {
+    color: var(--white-color);
+    background-color: var(--custom-btn-bg-hover-color) ;
+    box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+    font-size: 1rem;
+    color: var(--white-color);
+    text-align: left;
+    background-color: var(--custom-btn-bg-color);
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: var(--bs-accordion-transition);
+}
+
+@media (min-width: 992px) {
+        .edu-resource {
+            flex-direction: row;
+            align-items: center;
+        }
+        .quizzBtn {
+            margin-top: 0;
+        }
+}
+
+@media (max-width: 992px){
+    .quizzBtn {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 775px){
+    .overview {
+        width: 750px;   
+    }
+   
+}
+
+@media (max-width: 775px){
+    .overview button{
+        font-size: 1rem;
+    }
+    #iframe1{
+        height: 300px;
+    }
+    .course-info h4, .course-info p{
+        font-size: 1rem;
+    }
+    .tabs{
+        height: 50px;
+    }
+}
+
+@media (max-width: 405px){
+    .course-info{
+        gap: 10px;
+    }
+    .page1-btns button{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .ask-ai button{
+        margin-left: 5px;
+        padding: 5px 15px;
+        font-size: 12px;
+    }
+}

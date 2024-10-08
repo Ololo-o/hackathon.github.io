@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Study Page</title>
+
+        <!-- CSS FILES -->       
+        <link rel="stylesheet" href="css/study.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+                        
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/templatemo-topic-listing.css" rel="stylesheet">
+    </head>
+    
+    <body id="top">
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <i class="bi-back"></i>
+                        <span>Denied</span>
+                    </a>
+
+                    <div class="d-lg-none ms-auto me-4">
+                        <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+                    </div>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-5 me-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html#section_1">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html#section_2">Browse Topics</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html#section_3">How it works</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html#section_4">FAQs</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html#section_5">Contact</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="topics-listing.html">Topics Listing</a></li>
+
+                                    <li><a class="dropdown-item" href="contact.html">Contact Form</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="d-none d-lg-block">
+                            <span class="username ms-auto me-4 text-white">Username</span>
+                            <a href="dashboard/index.html" class="navbar-icon bi-person smoothscroll"></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
+
+            <header class="site-header d-flex flex-column justify-content-center align-items-center">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="edu-resource">
+                            <div id="video-container">
+                                <iframe id="iframe1" src="https://www.youtube.com/embed/tFM_WTHR54E" title="Базовые навыки цифровой грамотности" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen></iframe>
+                            </div>
+                                <button class="quizzBtn shadow-md"><a href="quiz-app/index.html">Take the quizz <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </header>
+
+
+            <section class="topics-detail-section section-padding" id="topics-detail">
+                <div class="d-flex justify-content-center">
+                     <div class="overview">
+                        <div class="tabs">
+                            <button id="tab1" class="tab" data-tab-number="1">Overview</button>
+                            <button id="tab2" class="tab" data-tab-number="2">Notes</button>
+                            <button id="tab3" class="tab" data-tab-number="3">AI help</button>
+                            <button id="tab4" class="tab" data-tab-number="4">FAQ</button>
+                        </div>
+                        <div class="pages">
+                            <div id="page1" class="page" data-page-number="1">
+                                <div class="course-info">
+                                    <h4>About this course</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quod pariatur deleniti quos! Sed, esse?</p>
+                                    <h4>Summary</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quod pariatur deleniti quos! Sed, esse?</p>
+                                    <h4>Course content</h4>
+                                    <p>content Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium aut, laborum doloremque itaque dolorem voluptates aperiam quam ut sed illo.</p>
+                                    <h4>Additional info regarding this course</h4>
+                                    <div class="page1-btns">
+                                        <button>infolink1</button>
+                                        <button>infolink2</button>  
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="page2" class="page" data-page-number="2">
+                                <textarea name="notes" id="notes"></textarea>
+                                <button id="notesBtn" class="notesBtn">Save changes</button>
+                            </div>
+                             <div id="page3" class="page" data-page-number="3">
+                                <div class="ai-chat">
+                                    <div id="chat"></div>
+                                    <div class="ask-ai">
+                                        <input type="text" id="input" placeholder="Type your message here..." />
+                                        <button id="send"><i class="fa-solid fa-paper-plane"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="page4" class="page" data-page-number="4">
+                                <div class="faq">
+                                        <div class="accordion" id="accordionExample">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        Question1?
+                                                    </button>
+                                                </h2>
+            
+                                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aliquid ipsam optio quo, doloremque distinctio eveniet dolorum praesentium repellat nobis esse asperiores quisquam, labore dolor dignissimos at explicabo obcaecati? Fugit.
+                                                    </div>
+                                                </div>
+                                            </div>
+            
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Question2?
+                                                </button>
+                                                </h2>
+            
+                                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aliquid ipsam optio quo, doloremque distinctio eveniet dolorum praesentium repellat nobis esse asperiores quisquam, labore dolor dignissimos at explicabo obcaecati? Fugit.
+                                                    </div>
+                                                </div>
+                                            </div>
+            
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Question3?                                             </button>
+                                                </h2>
+            
+                                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aliquid ipsam optio quo, doloremque distinctio eveniet dolorum praesentium repellat nobis esse asperiores quisquam, labore dolor dignissimos at explicabo obcaecati? Fugit.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+		
+      
+        <footer class="site-footer section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-12 mb-4 pb-2">
+                        <a class="navbar-brand mb-2" href="index.html">
+                            <i class="bi-back"></i>
+                            <span>Denied</span>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <h6 class="site-footer-title mb-3">Resources</h6>
+
+                        <ul class="site-footer-links">
+                            <li class="site-footer-link-item">
+                                <a href="index.html" class="site-footer-link">Home</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="topics-detail.html" class="site-footer-link">How it works</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="index.html" class="site-footer-link">FAQs</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="contact.html" class="site-footer-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
+                        <h6 class="site-footer-title mb-3">Contacts</h6>
+
+                        <p class="text-white d-flex mb-1">
+                            <a href="tel: 87750091838" class="site-footer-link">
+                                8-775-009-18-38
+                            </a>
+                        </p>
+                            <br>
+                        <p class="text-white d-flex">
+                            <a href="https://t.me/Metal_pipelka"class="site-footer-link">
+                                @Metal_pipelka
+                            </a>
+                        </p>
+                        <p class="text-white d-flex">
+                            <a href="https://t.me/Lastpeno" class="site-footer-link">
+                                @Lastpeno
+                            </a>
+                        </p>
+                        <p class="text-white d-flex">
+                            <a href="https://t.me/error651134" class="site-footer-link">
+                                @error651134
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-lg-0 ms-auto">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            English</button>
+
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Russian</button></li>
+
+                                <li><button class="dropdown-item" type="button">Kazakh</button></li>
+                            </ul>
+                        </div>
+
+                        <p class="copyright-text mt-lg-5 mt-4">Copyright © 2024 Project Denied. All rights reserved.</p>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/study.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/ai.js"></script>
+        <script src="https://kit.fontawesome.com/5cb2c2db78.js" crossorigin="anonymous"></script>
+    </body>
+</html>
